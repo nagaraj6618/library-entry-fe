@@ -1,0 +1,24 @@
+.navbar{
+   display: flex;
+   background-color: rgb(48, 48, 125);
+   justify-content: space-between;
+   align-items: center;
+}
+.navbar-img-container{
+   margin-left: 10px;
+   padding: 2px;
+  
+}
+.navbar-img{
+   height: 50px;
+}
+.navbar-link-container li{
+   display: inline;
+   margin-right: 17px;
+   list-style: none;
+   text-decoration: none;
+} 
+.navbar-link-container li Link{
+   list-style: none;
+   text-decoration: none;
+}
