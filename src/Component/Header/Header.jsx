@@ -45,22 +45,22 @@ const Header = () => {
         <div className="mobile-nav">
          <div>
           <div>
-            <Link to="/" className="text-link">
+            <Link to="/" className="text-link" onClick={handleClick}>
               Home
             </Link>
           </div>
           <div>
-            <Link to="/entry" className="text-link">
+            <Link to="/entry" className="text-link" onClick={handleClick}>
               Entry
             </Link>
           </div>
           <div>
-            <Link to="/report" className="text-link">
+            <Link to="/report" className="text-link" onClick={handleClick}>
               Report
             </Link>
           </div>
           <div>
-            <Link to="/login" className="text-link">
+            <Link to="/login" className="text-link" onClick={handleClick}>
               Login
             </Link>
           </div>
