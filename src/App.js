@@ -6,7 +6,9 @@ function App() {
   return (
     <div>
       <Header/>
+      
       <RoutesComponent/>
+      
     </div>
   );
 }

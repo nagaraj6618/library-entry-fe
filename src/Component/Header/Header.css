@@ -1,8 +1,13 @@
 .navbar{
+   
+}
+
+.navbar-big{
    display: flex;
-   background-color: rgb(48, 48, 125);
    justify-content: space-between;
    align-items: center;
+   background-color: rgb(48, 48, 125);
+   /* flex-direction: column; */
 }
 .navbar-img-container{
    margin-left: 10px;
@@ -18,7 +23,41 @@
    list-style: none;
    text-decoration: none;
 } 
-.navbar-link-container li Link{
-   list-style: none;
-   text-decoration: none;
+.mobile-menubar{
+   display: none;
+   color: white;
+   font-size: larger;
+   margin-right:20px;
+}
+
+@media only screen and (max-width:600px){
+   .navbar-link-container{
+      display: none;
+   }
+   .mobile-menubar{
+      display: inline;
+   }
+}
+.mobile-nav{
+   position: absolute;
+   width: 40%;
+   height: 90vh;
+   padding: 10px;
+   background-color: rgba(0, 0, 0, 0.374);
+   display: flex;
+   justify-content: center;
+   animation: 0.3s ease-out 0s 1 slideInFromLeft;
+   
+}
+@keyframes slideInFromLeft {
+   0% {
+     transform: translateX(-100%);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
+
+.mobile-nav div{
+   /* margin-left: 10px; */
 }
